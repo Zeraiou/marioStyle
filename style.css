@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+
+	font-family: 'Press Start 2P', cursive;
+}
+
+.pageContent {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.canvasCard {
+	position: relative;
+}
+
+.lifeDisplay {
+	position: absolute;
+	top: 17px;
+	left: 30px;
+
+	width: 150px;
+
+	font-size: 19px;
+}
+
+.overlay,
+.message {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+	visibility: hidden;
+}
+
+.message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	visibility: hidden;
+
+	font-size: 60px;
+	color: #AAA;
+}
